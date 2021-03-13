@@ -1,0 +1,100 @@
+Fri Mar 12 19:55:34 UTC 2021: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘suma’:
+exercises.c:16:10: error: ‘return’ with a value, in function returning void [-Werror]
+   return EXIT_SUCCESS;
+          ^~~~~~~~~~~~
+exercises.c:14:6: note: declared here
+ void suma(int a, int b, int * c) {
+      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+Fri Mar 12 19:55:59 UTC 2021: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Sat Mar 13 16:50:33 UTC 2021: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:16: error: expected expression before ‘]’ token
+ *suma=sumaN(*a[],n)-sumaN(*a[],m);
+                ^
+Compilation failed
+Sat Mar 13 16:50:44 UTC 2021: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:13: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+ *suma=sumaN(*a,n)-sumaN(*a,m);
+             ^
+exercises.c:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int sumaN(int a[], int N) {
+     ^~~~~
+exercises.c:40:25: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+ *suma=sumaN(*a,n)-sumaN(*a,m);
+                         ^
+exercises.c:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int sumaN(int a[], int N) {
+     ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+Sat Mar 13 16:52:51 UTC 2021: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:14: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+ suma = sumaN(*a,n) - sumaN(*a,m);
+              ^
+exercises.c:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int sumaN(int a[], int N) {
+     ^~~~~
+exercises.c:40:28: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+ suma = sumaN(*a,n) - sumaN(*a,m);
+                            ^
+exercises.c:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int sumaN(int a[], int N) {
+     ^~~~~
+exercises.c:40:6: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+ suma = sumaN(*a,n) - sumaN(*a,m);
+      ^
+cc1: all warnings being treated as errors
+Compilation failed
+Sat Mar 13 16:53:00 UTC 2021: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:15: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+ *suma = sumaN(*a,n) - sumaN(*a,m);
+               ^
+exercises.c:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int sumaN(int a[], int N) {
+     ^~~~~
+exercises.c:40:29: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+ *suma = sumaN(*a,n) - sumaN(*a,m);
+                             ^
+exercises.c:21:5: note: expected ‘int *’ but argument is of type ‘int’
+ int sumaN(int a[], int N) {
+     ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+Sat Mar 13 16:53:26 UTC 2021: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:17: error: expected expression before ‘]’ token
+ *suma = sumaN(a[],n) - sumaN(a[],m);
+                 ^
+Compilation failed
+Sat Mar 13 16:53:41 UTC 2021: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|6
+total_score: 10/70
+f213c05
