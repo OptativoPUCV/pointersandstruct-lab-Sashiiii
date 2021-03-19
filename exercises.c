@@ -23,11 +23,9 @@ Esta función suma los N primeros números del arreglo a
 int sumaN(int a[], int N) {
     int i;
     int tot = 0;
-
     for(i = 0; i < N; i++) {
       tot += a[i];
     }
-
     return tot;
 }
 
@@ -122,12 +120,9 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   Vector *a,*b;
   a = crearVector(c->capacidad);
   b = crearVector(c->capacidad);
-  a->datos = (int*)malloc(c->capacidad*sizeof(int));
-  b->datos = (int*)malloc(c->capacidad*sizeof(int));
-  a->datos[0]=a1;
-  a->datos[1]=a2;
-  b->datos[0]=b1;
-  b->datos[1]=b2;
+  //a->datos = (int*)malloc(c->capacidad*sizeof(int));
+  //b->datos = (int*)malloc(c->capacidad*sizeof(int));
+  //asignarValor(Vector * v, int i, int valor)
   c->datos = (int*)malloc(c->capacidad*sizeof(int));
   sumaV(a,b,c);
   /*
