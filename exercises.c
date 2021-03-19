@@ -4,7 +4,7 @@
 #include <math.h>
 #include <ctype.h>
 //#include "exercises.h"
-
+///CAMILA ANDREA BARRERA ALFARO
 /* 
 Ejercicio 1.
 Función que recibe 3 parámetros (a, b y c), 
