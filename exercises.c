@@ -120,10 +120,11 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   Vector *a,*b;
   a = crearVector(c->capacidad);
   b = crearVector(c->capacidad);
-  //a->datos = (int*)malloc(c->capacidad*sizeof(int));
-  //b->datos = (int*)malloc(c->capacidad*sizeof(int));
-  //asignarValor(Vector * v, int i, int valor)
-  c->datos = (int*)malloc(c->capacidad*sizeof(int));
+  asignarValor(a, 0, a1);
+  asignarValor(a, 1, a2);
+  asignarValor(b, 0, b1);
+  asignarValor(b, 1, b1);
+  //c->datos = (int*)malloc(c->capacidad*sizeof(int));
   sumaV(a,b,c);
   /*
   c->datos[0]=a1+b1;
